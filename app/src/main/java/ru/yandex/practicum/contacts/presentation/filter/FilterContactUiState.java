@@ -5,7 +5,25 @@ import java.util.Set;
 
 import ru.yandex.practicum.contacts.model.ContactType;
 
-public class FilterContactUiState {
-    public boolean isApplyEnable = false;
-    public Set<ContactType> newSelectedContactTypes = Collections.emptySet();
+class FilterContactUiState {
+    private boolean isApplyEnable = false;
+    private Set<ContactType> newSelectedContactTypes = Collections.emptySet();
+
+    boolean getIsApplyEnable() {
+        return isApplyEnable;
+    }
+
+    void setIsApplyEnable(boolean isApplyEnable) {
+        this.isApplyEnable = isApplyEnable;
+    }
+
+    Set<ContactType> getNewSelectedContactTypes() {
+        return newSelectedContactTypes;
+    }
+
+    void setNewSelectedContactTypes(Set<ContactType> newSelectedContactTypes) {
+        this.newSelectedContactTypes = newSelectedContactTypes;
+    }
+
+
 }
